@@ -446,9 +446,9 @@ function Home({go}){
   const left=MOCK.budget.total-MOCK.budget.spent;
   const pct=Math.round((MOCK.budget.spent/MOCK.budget.total)*100);
   const grocLeft=MOCK.groceries.filter(g=>!g.checked).length;
-  const subTotal=MOCK.subs.reduce((s,x)=>s+x.cost,0).toFixed(0);
+
   const circumference=2*Math.PI*45; // r=45 for 110px circle
-  const offset=circumference*(1-pct/100);
+
 
   return(
     <div className="pg">
